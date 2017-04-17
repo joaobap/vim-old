@@ -7,14 +7,16 @@ Plug 'Raimondi/delimitMate'
 call plug#end()
 
 " Core vim
-set nocp ru hls
+set nocp nu ru hls
 set ts=4 sw=4
-set bs=2
+set bs=2 ls=2
 set fenc=utf-8
 set enc=utf-8
 filetype indent plugin on
 inoremap jk <esc>
 syntax on
+
+color lightning
 
 " Plugins config 
 let delimitMate_expand_cr=1
