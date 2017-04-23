@@ -26,6 +26,7 @@ else
     let s:molokai_original = 0
 endif
 
+let g:rehash256=1
 
 hi Boolean         guifg=#AE81FF
 hi Character       guifg=#E6DB74
@@ -233,7 +234,7 @@ if &t_Co > 255
    hi SpecialKey      ctermfg=59
 
    if exists("g:rehash256") && g:rehash256 == 1
-       hi Normal       ctermfg=252 ctermbg=234
+       hi Normal       ctermfg=252 ctermbg=233
        hi CursorLine               ctermbg=236   cterm=none
        hi CursorLineNr ctermfg=208               cterm=none
 
@@ -265,7 +266,7 @@ if &t_Co > 255
        hi Visual                      ctermbg=238
 
        hi Comment         ctermfg=244
-       hi LineNr          ctermfg=239 ctermbg=235
+       hi LineNr          ctermfg=239 ctermbg=233
        hi NonText         ctermfg=239
        hi SpecialKey      ctermfg=239
    endif
