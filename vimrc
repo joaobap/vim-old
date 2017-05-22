@@ -8,7 +8,6 @@ Plug 'pangloss/vim-javascript'
 call plug#end()
 
 let g:delimitMate_expand_cr=1
-let g:rehash256=1
 
 set nocp
 set number
@@ -23,13 +22,14 @@ set encoding=utf-8
 set pastetoggle=<F10>
 filetype indent plugin on
 syntax on
-color molokai
+color wombat256mod
 
 inoremap jk <esc>
 vnoremap cp "+y
 nnoremap cv "+p
-nnoremap tt :%s/\s\+$//e<cr> :noh<cr>
+nnoremap tt :Trail<cr>
 command Trail %s/\s\+$//e | noh
 
 au filetype lisp set sw=2 ts=2 et sta
 au filetype html set sw=2 ts=2
+
