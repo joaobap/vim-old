@@ -5,6 +5,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rust-lang/rust.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'pangloss/vim-javascript'
+"Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 let g:delimitMate_expand_cr=1
@@ -22,14 +23,13 @@ set encoding=utf-8
 set pastetoggle=<F10>
 filetype indent plugin on
 syntax on
-color wombat256mod
+color codedark
 
 inoremap jk <esc>
 vnoremap cp "+y
 nnoremap cv "+p
 nnoremap tt :Trail<cr>
-command Trail %s/\s\+$//e | noh
+command! Trail %s/\s\+$//e | noh
 
 au filetype lisp set sw=2 ts=2 et sta
-au filetype html set sw=2 ts=2
-
+au filetype html,xml set sw=2 ts=2
