@@ -9,6 +9,7 @@ Plug 'pangloss/vim-javascript'
 call plug#end()
 
 let g:delimitMate_expand_cr=1
+let g:code_darker=0
 
 set nocp
 set number
