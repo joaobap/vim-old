@@ -31,4 +31,11 @@ nnoremap tt :Trail<cr>
 command! Trail %s/\s\+$//e | noh
 
 au filetype lisp set sw=2 ts=2 et sta
-au filetype html,xml set sw=2 ts=2
+au filetype html,xml set sw=2 ts=2 et sta
+
+" OS specific
+if has('win32')
+	set viminfo+=n~/vimfiles/viminfo
+else
+	set viminfo+=n~/.vim/viminfo
+endif
