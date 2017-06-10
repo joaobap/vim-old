@@ -1,14 +1,16 @@
 call plug#begin()
 Plug 'fatih/vim-go'
-Plug 'mattn/emmet-vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rust-lang/rust.vim'
-Plug 'Raimondi/delimitMate'
 Plug 'pangloss/vim-javascript'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'mattn/emmet-vim'
+Plug 'tpope/vim-surround'
+Plug 'Raimondi/delimitMate'
 "Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 let g:delimitMate_expand_cr=1
+let g:wombat_darker=0
 
 set nocp
 set number
@@ -23,6 +25,7 @@ set encoding=utf-8
 set pastetoggle=<F10>
 filetype indent plugin on
 syntax on
+color wombat
 
 inoremap jk <esc>
 vnoremap cp "+y
@@ -33,9 +36,3 @@ command! Trail %s/\s\+$//e | noh
 au filetype lisp set sw=2 ts=2 et sta
 au filetype html,xml set sw=2 ts=2 et sta
 
-" OS specific
-if has('win32')
-	set viminfo+=n~/vimfiles/viminfo
-else
-	set viminfo+=n~/.vim/viminfo
-endif
