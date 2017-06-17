@@ -10,6 +10,7 @@ Plug 'Raimondi/delimitMate'
 call plug#end()
 
 let g:delimitMate_expand_cr=1
+let g:ycm_autoclose_preview_window_after_completion=1
 let g:wombat_darker=0
 
 set nocp
@@ -25,7 +26,7 @@ set encoding=utf-8
 set pastetoggle=<F10>
 filetype indent plugin on
 syntax on
-color wombat
+set bg=dark
 
 inoremap jk <esc>
 vnoremap cp "+y
@@ -34,5 +35,5 @@ nnoremap tt :Trail<cr>
 command! Trail %s/\s\+$//e | noh
 
 au filetype lisp set sw=2 ts=2 et sta
-au filetype html,xml set sw=2 ts=2 et sta
+au filetype html,xml set sw=2 ts=2
 
