@@ -21,16 +21,14 @@ set laststatus=2
 set backspace=2
 set encoding=utf-8
 set pastetoggle=<F10>
-
 filetype indent plugin on
 syntax on
-color jellybeans
+color wombat
 
 inoremap jk <esc>
 vnoremap cp "+y
 nnoremap cv "+p
-nnoremap tt :Trail<cr>
-command! Trail %s/\s\+$//e | noh
+nnoremap tt :%s/\s\+$//e<cr> :noh<cr>
 
 let g:delimitMate_expand_cr=1
 let g:ale_sign_column_always=1

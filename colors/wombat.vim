@@ -21,11 +21,11 @@ let colors_name = "wombat"
 
 " General colors
 if exists('g:wombat_darker') && g:wombat_darker == 1
-	hi Normal		ctermfg=252		ctermbg=233		cterm=none		guifg=#e3e0d7	guibg=#1c1c1c	gui=none
-	hi LineNr		ctermfg=241		ctermbg=233		cterm=none		guifg=#857b6f	guibg=#1c1c1c	gui=none
+	hi Normal		ctermfg=252		ctermbg=233		cterm=none		guifg=#D4D4D4	guibg=#1c1c1c	gui=none
+	hi LineNr		ctermfg=241		ctermbg=233		cterm=none		guifg=#606060	guibg=#1c1c1c	gui=none
 else
-	hi Normal		ctermfg=252		ctermbg=234		cterm=none		guifg=#e3e0d7	guibg=#242424	gui=none
-	hi LineNr		ctermfg=241		ctermbg=234		cterm=none		guifg=#857b6f	guibg=#242424	gui=none
+	hi Normal		ctermfg=252		ctermbg=234		cterm=none		guifg=#D4D4D4	guibg=#1E1E1E	gui=none
+	hi LineNr		ctermfg=241		ctermbg=234		cterm=none		guifg=#606060	guibg=#1E1E1E	gui=none
 endif
 hi Cursor		ctermfg=234		ctermbg=228		cterm=none		guifg=#242424	guibg=#eae788	gui=none
 hi Visual		ctermfg=251		ctermbg=239		cterm=none		guifg=#c3c6ca	guibg=#554d4b	gui=none
@@ -81,15 +81,15 @@ hi DiffChange					ctermbg=237										guibg=#382a37
 " Syntax highlighting
 hi Keyword		ctermfg=111		cterm=none		guifg=#88b8f6	gui=none
 hi Statement	ctermfg=111		cterm=none		guifg=#88b8f6	gui=none
-hi Constant		ctermfg=173		cterm=none		guifg=#e5786d	gui=none
-hi Number		ctermfg=173		cterm=none		guifg=#e5786d	gui=none
-hi PreProc		ctermfg=173		cterm=none		guifg=#e5786d	gui=none
+hi Constant		ctermfg=173		cterm=none		guifg=#d7875f	gui=none
+hi Number		ctermfg=173		cterm=none		guifg=#d7875f	gui=none
+hi PreProc		ctermfg=173		cterm=none		guifg=#d7875f	gui=none
 hi Function		ctermfg=192		cterm=none		guifg=#cae982	gui=none
 hi Identifier	ctermfg=192		cterm=none		guifg=#cae982	gui=none
 hi Type			ctermfg=186		cterm=none		guifg=#d4d987	gui=none
 hi Special		ctermfg=229		cterm=none		guifg=#eadead	gui=none
-hi String		ctermfg=113		cterm=none		guifg=#95e454	gui=none
-hi Comment		ctermfg=241		cterm=none		guifg=#606060	gui=italic
+hi String		ctermfg=113		cterm=none		guifg=#87d75f	gui=none
+hi Comment		ctermfg=242		cterm=none		guifg=#666666	gui=italic
 hi Todo			ctermfg=101		cterm=none		guifg=#857b6f	gui=italic
 
 
