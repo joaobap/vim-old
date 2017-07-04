@@ -97,5 +97,5 @@ hi Todo			ctermfg=101		cterm=none		guifg=#857b6f	gui=italic
 hi! link FoldColumn		Folded
 hi! link CursorColumn	CursorLine
 hi! link NonText		LineNr
-
+hi! link QuickFixLine   Search
 " vim:set ts=4 sw=4 noet:
