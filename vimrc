@@ -4,10 +4,9 @@ Plug 'rust-lang/rust.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'skywind3000/asyncrun.vim'
-"Plug 'pangloss/vim-javascript'
-"Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mattn/emmet-vim'
 "Plug 'w0rp/ale'
-"Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 set nocp
@@ -30,10 +29,9 @@ vnoremap cp "+y
 nnoremap cv "+p
 nnoremap tt :%s/\s\+$//e<cr> :noh<cr>
 
-let g:delimitMate_expand_cr=1
-let g:ale_sign_column_always=1
-let g:ycm_autoclose_preview_window_after_completion=1
-
 au BufNewFile,BufRead *.lisp set sw=2 ts=2 et sta
 au BufNewFile,BufRead *.html,*.xml set sw=2 ts=2
+
+let g:delimitMate_expand_cr=1
+let g:ale_sign_column_always=1
 
