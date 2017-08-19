@@ -1,9 +1,13 @@
 call plug#begin()
+" Languages
 Plug 'fatih/vim-go'
+Plug 'keith/swift.vim'
 Plug 'pangloss/vim-javascript'
+" Tools
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'mattn/emmet-vim'
+Plug 'rhysd/vim-clang-format'
 " Disabled
 "Plug 'w0rp/ale'
 "Plug 'skywind3000/asyncrun.vim'
@@ -23,13 +27,12 @@ set encoding=utf-8
 set pastetoggle=<F10>
 filetype indent plugin on
 syntax on
+color jellybeans
 
 inoremap jk <esc>
-vnoremap cp "+y
-nnoremap cv "+p
+vnoremap <leader>y "+y
+nnoremap <leader>p "+p
 nnoremap tt :%s/\s\+$//e<cr> :noh<cr>
-
-au BufNewFile,BufRead *.html,*.xml set sw=2 ts=2
 
 let g:delimitMate_expand_cr=1
 let g:ale_sign_column_always=1
