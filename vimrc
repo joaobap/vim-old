@@ -1,7 +1,6 @@
 call plug#begin()
 Plug 'fatih/vim-go'
 Plug 'pangloss/vim-javascript'
-Plug 'artur-shaik/vim-javacomplete2'
 "Plug 'rust-lang/rust.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
