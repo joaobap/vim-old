@@ -17,8 +17,7 @@ set ruler
 set number
 set hlsearch
 set wildmenu
-set tabstop=4
-set shiftwidth=4
+set ts=8 sw=8
 set laststatus=2
 set backspace=2
 set encoding=utf-8
@@ -36,6 +35,7 @@ let g:delimitMate_expand_cr=1
 let g:ale_sign_column_always=1
 let g:completor_clang_binary="/usr/bin/clang"
 
-"au filetype cpp      :setlocal ts=2 sw=2 sta et
-au filetype html,xml :setlocal ts=2 sw=2
+au filetype cpp :setlocal ts=2 sw=2 sta et
+au filetype ocaml :setlocal ts=2 sw=2 sta et
+"au filetype html,xml :setlocal ts=2 sw=2 sta et
 au filetype tex,plaintex :setlocal tw=80 spell spelllang=pt,en_us
