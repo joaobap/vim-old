@@ -6,7 +6,7 @@ set guioptions-=r
 set guioptions-=L
 set clipboard=unnamed
 
-set guifont+=Monaco:h11
+set guifont+=Menlo:h11
 set guifont+=Consolas:h10
 set guifont+=DejaVu\ Sans\ Mono
 
