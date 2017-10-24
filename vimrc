@@ -6,10 +6,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'mattn/emmet-vim'
 Plug 'rhysd/vim-clang-format'
-
-"Plug 'skywind3000/asyncrun.vim'
-"Plug 'w0rp/ale'
-"Plug 'maralla/completor.vim'
 call plug#end()
 
 set nocp
@@ -32,10 +28,9 @@ nnoremap <leader>p "+p
 nnoremap tt :%s/\s\+$//e<cr> :noh<cr>
 
 let g:delimitMate_expand_cr=1
-let g:ale_sign_column_always=1
-let g:completor_clang_binary="/usr/bin/clang"
 
-au filetype cpp :setlocal ts=2 sw=2 sta et
-au filetype ocaml :setlocal ts=2 sw=2 sta et
-"au filetype html,xml :setlocal ts=2 sw=2 sta et
+"au filetype cpp :setlocal ts=2 sw=2 sta et
+"au filetype ocaml :setlocal ts=2 sw=2 sta et
+"au BufRead,BufNewFile *.h :setlocal ft=c
+au filetype html,xml :setlocal ts=2 sw=2 sta et
 au filetype tex,plaintex :setlocal tw=80 spell spelllang=pt,en_us
