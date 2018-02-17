@@ -1,4 +1,4 @@
-"color jellybeans
+color palenight
 
 set guioptions-=m
 set guioptions-=T
