@@ -1,4 +1,4 @@
-color palenight
+color jellybeans
 
 set guioptions-=m
 set guioptions-=T
@@ -6,7 +6,7 @@ set guioptions-=r
 set guioptions-=L
 set clipboard=unnamed
 
-set guifont=Monaco
+"set guifont=Monaco
 set guifont+=Menlo
 set guifont+=Consolas:h10
 set guifont+=DejaVu\ Sans\ Mono
