@@ -9,11 +9,8 @@ Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
 Plug 'rhysd/vim-clang-format'
 Plug 'tpope/vim-fugitive'
-
-" Airline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-
 "Plug 'w0rp/ale'
 call plug#end()
 
@@ -25,8 +22,6 @@ set wildmenu
 set laststatus=2
 set backspace=2
 set encoding=utf-8
-set pastetoggle=<F10>
-set completeopt-=preview
 set directory=~/.vim/swp//
 filetype indent plugin on
 syntax on
