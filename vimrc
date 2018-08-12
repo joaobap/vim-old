@@ -8,12 +8,10 @@ call plug#end()
 
 set nocp
 set ruler
-set number
 set hlsearch
 set wildmenu
 set ts=2 sw=2 et sta
 set textwidth=80
-set laststatus=2
 set backspace=2
 set encoding=utf-8
 set directory=~/.vim/swp//
