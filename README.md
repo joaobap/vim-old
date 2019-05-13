@@ -1,28 +1,29 @@
 # Vim configuration
 
-## A record of collected plugins found over time
+## Plugins that make vim even cooler (so I don't forget)
 
-For languages:
+Programming languages:
 
 * `Plug 'fatih/vim-go'`
 * `Plug 'pangloss/vim-javascript'`
 * `Plug 'rust-lang/rust.vim'`
 
-Utilities:
+Utilities and convenient plugins:
 
 * `Plug 'Raimondi/delimitMate'`
 * `Plug 'rhysd/vim-clang-format'`
 * `Plug 'ctrlpvim/ctrlp.vim'`
 * `Plug 'mattn/emmet-vim'`
 
-IDE like:
+IDE functionality plugins:
 
-* `Plug 'skywind3000/asyncrun.vim'`
-* `Plug 'w0rp/ale'`
-* `Plug 'maralla/completor.vim'`
+* `Plug 'skywind3000/asyncrun.vim'` (Vim 8 includes the `terminal` command
+  which can _kinda_ do the same)
+* `Plug 'w0rp/ale'` (Async Linting)
+* `Plug 'maralla/completor.vim'` (Async completor)
 
 
-## Configurations for plugins
+## Configurations for plugins (again, so I don't forget)
 
 ```vimscript
 let g:delimitMate_expand_cr=1
