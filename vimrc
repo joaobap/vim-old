@@ -4,8 +4,6 @@ Plug 'fatih/vim-go'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'ziglang/zig.vim'
-
-"Plug 'w0rp/ale'
 call plug#end()
 
 set nocp
@@ -27,7 +25,7 @@ nnoremap <leader>p "+p
 nnoremap tt :%s/\s\+$//e<cr> :noh<cr>
 
 au filetype cpp :setlocal cinoptions+=N-s
-au filetype go  :setlocal noet "ts=8 sw=8 
+au filetype go  :setlocal noet ts=8 sw=8 
 au filetype typescript,javascript,json :setlocal ts=2 sw=2 et sta
 
 let g:ctrlp_custom_ignore = 'node_modules\|\v[\/]\.(git|hg|svn)$'
