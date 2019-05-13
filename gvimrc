@@ -1,11 +1,13 @@
-color dracula
+color jellybeans
+
 set guioptions-=m
 set guioptions-=T
 set guioptions-=r
 set guioptions-=L
-set clipboard=unnamed
+"set clipboard=unnamed
 
-set guifont=Monaco,Consolas,DejaVu\ Sans\ Mono
+set guifont=Iosevka:h13,Menlo:h12
+set linespace=0
 
 set noerrorbells visualbell t_vb=
 au GUIEnter * set visualbell t_vb=
