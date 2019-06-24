@@ -4,6 +4,7 @@ Plug 'fatih/vim-go'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'rhysd/vim-clang-format'
 Plug 'ziglang/zig.vim'
+Plug 'Raimondi/delimitMate'
 call plug#end()
 
 set nocp
@@ -28,5 +29,6 @@ au filetype cpp :setlocal cinoptions+=N-s
 au filetype go  :setlocal noet ts=8 sw=8 
 au filetype typescript,javascript,json :setlocal ts=2 sw=2 et sta
 
+let g:delimitMate_expand_cr=1
 let g:ctrlp_custom_ignore = 'node_modules\|\v[\/]\.(git|hg|svn)$'
 
