@@ -2,7 +2,6 @@ call plug#begin()
 Plug 'rust-lang/rust.vim'
 Plug 'udalov/kotlin-vim'
 Plug 'pangloss/vim-javascript'
-Plug 'rhysd/vim-clang-format'
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
