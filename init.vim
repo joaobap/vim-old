@@ -14,13 +14,11 @@ set ts=2 sw=2 et sta
 set backspace=2
 set laststatus=2
 set encoding=utf-8
-set directory=~/.vim/swp//
 set cinoptions+=g0
 set clipboard=unnamed
 filetype indent plugin on
 syntax on
-color jellybeans
-set bg=dark
+color night-owl
 
 inoremap jk <esc>
 nnoremap <leader>y :set nopaste<cr>
