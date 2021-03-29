@@ -31,3 +31,4 @@ au filetype cpp :setlocal cinoptions+=N-s
 let g:delimitMate_expand_cr=1
 
 set termguicolors
+
