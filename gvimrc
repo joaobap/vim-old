@@ -4,7 +4,6 @@ set guioptions-=m
 set guioptions-=T
 set guioptions-=r
 set guioptions-=L
-"set clipboard=unnamed
 
 set guifont=Iosevka:h13,Menlo:h12
 set linespace=0
