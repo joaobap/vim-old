@@ -4,6 +4,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'Raimondi/delimitMate'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 set nocp
@@ -19,6 +20,7 @@ set clipboard=unnamed
 filetype indent plugin on
 syntax on
 color night-owl
+set termguicolors
 
 inoremap jk <esc>
 nnoremap <leader>y :set nopaste<cr>
@@ -30,4 +32,19 @@ au filetype cpp :setlocal cinoptions+=N-s
 
 let g:delimitMate_expand_cr=1
 
-set termguicolors
+
+" WSL copy and paste
+set clipboard+=unnamedplus
+let g:clipboard = {
+          \   'name': 'win32yank-wsl',
+          \   'copy': {
+          \      '+': 'win32yank.exe -i --crlf',
+          \      '*': 'win32yank.exe -i --crlf',
+          \    },
+          \   'paste': {
+          \      '+': 'win32yank.exe -o --lf',
+          \      '*': 'win32yank.exe -o --lf',
+          \   },
+          \   'cache_enabled': 0,
+          \ }
+
