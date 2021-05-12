@@ -2,6 +2,7 @@ call plug#begin()
 Plug 'rust-lang/rust.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'Raimondi/delimitMate'
+Plug 'jremmen/vim-ripgrep'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
 Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -19,7 +20,7 @@ set cinoptions+=g0
 set clipboard=unnamed
 filetype indent plugin on
 syntax on
-color night-owl
+color hybrid
 set termguicolors
 
 inoremap jk <esc>
